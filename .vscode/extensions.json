@@ -2,6 +2,13 @@
   "recommendations": [
     "Vue.volar",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-complete-tag",
+    "formulahendry.auto-rename-tag",
+    "steoates.autoimport",
+    "eamodio.gitlens",
+    "shaharkazaz.git-merger"
   ]
 }
