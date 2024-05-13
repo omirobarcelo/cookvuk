@@ -10,6 +10,9 @@ import HelloWorld from './components/HelloWorld.vue';
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
 
+      <div class="text-green-200 text-xl">Hello, from TailwindCSS!</div>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Button</button>
+
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
