@@ -20,6 +20,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  @apply text-2xl font-bold;
+}
+
 /* body {
   min-height: 100vh;
   color: var(--color-text);

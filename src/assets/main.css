@@ -1,8 +1,38 @@
 @import './base.css';
 
-/* #app {
-  max-width: 1280px;
+#app {
+  /* max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  font-weight: normal;
-} */
+  font-weight: normal; */
+  min-height: 100vh;
+  @apply bg-slate-200;
+}
+
+.layout-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout-container > * {
+  width: 100%;
+  max-width: 1280px;
+}
+
+.page {
+  @apply p-3;
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+
+.btn.primary {
+  @apply bg-green-500 hover:bg-green-700 text-white;
+}
+
+.btn.secondary {
+  @apply bg-gray-300 hover:bg-gray-400 text-gray-700;
+}
