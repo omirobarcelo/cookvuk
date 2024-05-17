@@ -4,7 +4,7 @@ import type { CookbookEntry, RecipeVersion } from '@/api/types';
 
 const cookbookApiService = new CookbookApiService();
 
-export const cookbookStore = reactive({
+export const cookbookEntryStore = reactive({
   loading: true,
   cookbookEntry: undefined as CookbookEntry | undefined,
   async load(id: string) {
