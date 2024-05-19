@@ -16,6 +16,11 @@ export const cookbookEntryStore = reactive({
   async addVersion(version: RecipeVersion) {
     if (this.cookbookEntry != null) {
       await cookbookApiService.addVersion(this.cookbookEntry.id, version);
+      this.reset();
     }
+  },
+  reset() {
+    this.loading = true;
+    this.cookbookEntry = undefined;
   }
 });

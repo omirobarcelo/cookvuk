@@ -103,13 +103,13 @@ const nextVersion = () => {
         <strong>Ingredients:</strong>
       </p>
       <pre v-if="cookbookEntryStore.loading" class="skeleton clear full mb-3 h-10"></pre>
-      <pre v-else class="bg-gray-100 p-2 mb-3">{{ currentRecipe!.ingredients }}</pre>
+      <pre v-else class="text-block mb-3">{{ currentRecipe!.ingredients }}</pre>
 
       <p class="text mb-3">
         <strong>Steps:</strong>
       </p>
       <pre v-if="cookbookEntryStore.loading" class="skeleton clear full h-10"></pre>
-      <pre v-else class="bg-gray-100 p-2">{{ currentRecipe!.steps }}</pre>
+      <pre v-else class="text-block">{{ currentRecipe!.steps }}</pre>
     </main>
   </div>
 </template>
@@ -143,5 +143,10 @@ const nextVersion = () => {
 
 .label {
   @apply font-bold;
+}
+
+.text-block {
+  text-wrap: pretty;
+  @apply bg-gray-100 p-2;
 }
 </style>

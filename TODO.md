@@ -5,5 +5,5 @@
 - [x] Create stores to handle reactive state of client
 - [x] Create view for recipe list and components
 - [x] Create view for recipe and components
-- [ ] Create view to add a recipe and components
-- [ ] Create view to edit recipe and components
+- [x] Create view to add a recipe and components
+- [x] Create view to edit recipe and components

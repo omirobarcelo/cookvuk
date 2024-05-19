@@ -1,6 +1,6 @@
 import { reactive } from 'vue';
 import { CookbookApiService } from '@/api/cookbook-api.service';
-import type { Cookbook } from '@/api/types';
+import type { Cookbook, RecipeVersion } from '@/api/types';
 
 const cookbookApiService = new CookbookApiService();
 
@@ -12,5 +12,13 @@ export const cookbookStore = reactive({
     const data = await cookbookApiService.getCookbook();
     this.cookbook = data;
     this.loading = false;
+  },
+  async addRecipe(version: RecipeVersion) {
+    await cookbookApiService.addEntry(version);
+    this.reset();
+  },
+  reset() {
+    this.loading = true;
+    this.cookbook = undefined;
   }
 });
